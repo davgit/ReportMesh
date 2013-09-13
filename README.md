@@ -53,6 +53,7 @@ ReportMesh requires Jquery and Underscore.js. Here is a starting layout:
 Rules are simple. Body element has to contain one element with `id='reportmesh'`. This element has to contain child elements with `class='mesh'`. Everything else will be stripped out of the DOM tree. 
 
 Optionally your report pages can have header and footer. They have to be marked with id's `header` and `footer`. The most exciting part here is that they are [underscore.js](http://underscorejs.org/) templates and both of them receives variable `page_number`. It means that you can just display that number or you can get absolutely wild by creating custom headers and footers for every page of your report. 
+
 **NOTE:** Do not use img tags in header and footer. Use html blocks and style them with css to use images. ReportMesh needs to know exact height of every element in header and footer before it loads. If you use `<img>` tags in footer or header template ReportMesh will fail and you will get a real Report-Mess instead. :)
 
 You have to include `jquery`, `underscore` and `reportmesh` JavaScript libraries and finally you have to render your starting layout by calling `renderReportMesh();`. And this is what it gets rendered in to:
@@ -111,16 +112,16 @@ render your layout like this:
 
 `renderReportMesh({page_width:215.9, page_height:279.4, padding:3});`
 
-Then render it like this:
+Then render it with pantomjs:
 
-`phantomjs phantom_htmltopdf_letter.js source_url_or_html_file destination_pdf'
+`phantomjs phantom_htmltopdf_letter.js source_url_or_html_file destination_pdf`
 
-If you take time to investigate files `phantom_htmltopdf_letter.js` and `phantom_htmltopdf_letter.js` will see that they containt pretty basic config once again defining page dimensions. So if you need to generate pdfs in other than A4 or letter format make your self a `phantom_htmltopdf_whatever.js` file and use it for rendering.
+If you take time to investigate files `phantom_htmltopdf_letter.js` and `phantom_htmltopdf_letter.js` will see that they containt pretty basic config once again defining page dimensions. So if you need to generate pdfs in other than a4 or letter format make your self a `phantom_htmltopdf_whatever.js` file and use it for rendering.
 
 #Restrictions and advices
 
 - Try to avoid styling chunk elements, this can cause unpredictable results.
-- Content in chunk elements needs to have height. If you float something, do not forget to add element width style `clear:both` at the end of your chunk element. Keep this in mind when position something with absolute positioning.
+- Content in chunk elements needs to have height. If you float something, do not forget to add element with style `clear:both` at the end of your chunk element. Keep this in mind when position something with absolute positioning.
 - Do not use `<img>` elements in header and footer templates. Use css property background-image instead. 
 
 

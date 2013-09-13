@@ -96,15 +96,15 @@ Now convert it to a real a real pdf file by using phantomjs (linux platform) lik
 
 #Options
 
-`renderReportMesh(params)` function takes one object argument with possible parameters:
+`renderReportMesh({});` function takes one object argument with possible parameters:
 
-`page_width` - number defining page width in mm, default = 297
-`page_height` - number defining page height in mm, default = 210
-`padding` - number defining page padding in mm, default = 5
-`padding_top` - number defining page top padding in mm, default = `padding`
-`padding_right` - number defining page right padding in mm, default = `padding`
-`padding_bottom` - number defining page bottom padding in mm, default = `padding`
-`padding_left` - number defining page left padding in mm, default = `padding`
+- `page_width` - number defining page width in mm, default = 297
+- `page_height` - number defining page height in mm, default = 210
+- `padding` - number defining page padding in mm, default = 5
+- `padding_top` - number defining page top padding in mm, default = `padding`
+- `padding_right` - number defining page right padding in mm, default = `padding`
+- `padding_bottom` - number defining page bottom padding in mm, default = `padding`
+- `padding_left` - number defining page left padding in mm, default = `padding`
 
 Eg. to generate pdf report in US letter layout with 3mm page padding
 render your layout like this:

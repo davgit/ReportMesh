@@ -56,13 +56,12 @@ ReportMesh requires Jquery and Underscore.js. Here is a starting layout:
 
 Rules are simple. Body element has to contain one element with `id='reportmesh'`. This element has to contain child elements with `class='mesh'`. Everything else will be stripped out of the DOM tree. 
 
-Optionaly your report pages can have header and footer. They have to be marked with id's `header` and `footer`. The most exciting part here is that they are [underscore.js](http://underscorejs.org/) templates and both of them receives variable `page_number`. It means that you can just display that number or you can get absoluteley wild by creating cutom headers and footers for every page of your report. 
+Optionally your report pages can have header and footer. They have to be marked with id's `header` and `footer`. The most exciting part here is that they are [underscore.js](http://underscorejs.org/) templates and both of them receives variable `page_number`. It means that you can just display that number or you can get absolutely wild by creating custom headers and footers for every page of your report. 
 **NOTE:** Do not use img tags in header and footer. Use html blocks and style them with css to use images. ReportMesh needs to know exact height of every element in header and footer before it loads. If you use `<img>` tags in footer or header template ReportMesh will fail and you will get a real Report-Mess instead. :)
 
-You have to include `jquery`, `underscore` and `reportmesh` JavaScript libraries and finaly you have to render your starting layou by calling `renderReportMesh();`. And this is what it gets rentered in to:
+You have to include `jquery`, `underscore` and `reportmesh` JavaScript libraries and finally you have to render your starting layout by calling `renderReportMesh();`. And this is what it gets rendered in to:
 
-```
-html
+```html
 <!DOCTYPE html>
 <html>
 <head>

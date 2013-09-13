@@ -1,0 +1,78 @@
+body{
+    font-family: 'Droid Sans';
+    line-height: 1.5;
+    font-size: 3mm;
+}
+.container{
+    width: auto;
+    margin-left: 10mm;
+    margin-right: 10mm;
+    position:relative;
+}
+hr{
+    border: none;
+    border-bottom: solid #EEE 2px;
+}
+hr.dotted{
+    border-bottom: dotted #EEE 2px;
+}
+b{
+    font-weight: bold;
+}
+.header{
+    padding: 3mm 0;
+}
+.header .logo{
+    height: 15mm;
+    width: 60.9mm;
+    background: url(cernido_logo_print.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.footer .office{
+    line-height: 2;
+    margin: 5mm 0 10mm;
+    float:left;
+    width:33%;
+}
+
+h1{
+    text-align: center;
+    color: #9e5759 ;
+    font-size: 2em;
+    margin-bottom:1em;
+}
+h2{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.clearfix{
+    clear:both;
+}
+
+.case-img, .case-img img{
+    height: 45mm;
+}
+
+.scope{
+    padding-left: 5mm;
+}
+
+.scope .description{
+    font-style:italic;
+}
+.scope i{
+    font-size: 2em;
+    color: #666;
+    margin-right: 2mm;
+}
+.intro-table td{
+    vertical-align: top;
+}
+.page-number{
+    position: absolute;
+    right: 0;
+    top: 10mm;
+}

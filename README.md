@@ -17,23 +17,18 @@ ReportMesh requires Jquery and Underscore.js. Here is a starting layout:
 </head>
 <body>
   <div id='reportmesh'>
-
     <div class='chunk'>
     	<p>This is a content that will always stay in one peace 
       and will never be splitted across multiple pages.</p>
 		</div>
-
 		<div class='chunk'>
-			<p style='height:15mm'>
-    	This is a secont content block that will always stay in one peace 
+			<p style='height:15mm'>This is a secont content block that will always stay in one peace 
       and will never be splitted across multiple pages.</p>
 		</div>
-
 		<div class='chunk'>
     	<p style='height:15mm'>This is a third content block that will always stay in one peace 
       and will never be splitted across multiple pages.</p>
-		</div>
-  
+		</div>  
   </div>
 
 	<script type='text/html' id='header'>
@@ -71,29 +66,23 @@ You have to include `jquery`, `underscore` and `reportmesh` JavaScript libraries
 <body>
 
   <div class='page' style='width:200mm; height:287mm; padding: 5mm 5mm 5mm 5mm'>
-
     <div class='chunk'>
     	<p>This is a content that will always stay in one peace 
       and will never be splitted across multiple pages.</p>
 		</div>
-
 		<div class='chunk'>
-			<p style='height:15mm'>
-    	This is a secont content block that will always stay in one peace 
+			<p style='height:15mm'>This is a secont content block that will always stay in one peace 
       and will never be splitted across multiple pages.</p>
 		</div>
-
   </div>
 
   <div class='page' style='width:200mm; height:287mm; padding: 5mm 5mm 5mm 5mm'>
-
 		<div class='chunk'>
     	<p style='height:15mm'>This is a third content block that will always stay in one peace 
       and will never be splitted across multiple pages.</p>
-		</div>
-  
-  </div>
-	
+		</div>  
+  </div>	
+
 </body>
 </html>
 ```

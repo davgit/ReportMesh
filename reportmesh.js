@@ -53,7 +53,7 @@ function renderReportMesh(params){
     function create_page(){
         page_number += 1;
 
-        var page_html = "<div><div class='page' style='" + page_width_css +
+        var page_html = "<div class='page' style='" + page_width_css +
             page_height_css + padding_css + " '><div class='rm-page-inner'>";
 
         if (header_html){
@@ -67,7 +67,7 @@ function renderReportMesh(params){
                          + _.template(footer_html, {page_number:page_number})
                          + "</div>";
         }
-        page_html += "</div></div></div>";
+        page_html += "</div></div>";
         $page = $(page_html);
         $body.append($page);
         $page_content = $page.find('.rm-content');

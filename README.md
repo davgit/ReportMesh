@@ -18,26 +18,26 @@ ReportMesh requires Jquery and Underscore.js. Here is a starting layout:
 <body>
   <div id='reportmesh'>
     <div class='chunk'>
-    	<p>This is a content that will always stay in one peace 
+      <p>This is a content that will always stay in one peace 
       and will never be splitted across multiple pages.</p>
-		</div>
-		<div class='chunk'>
-			<p style='height:15mm'>This is a secont content block that will always stay in one peace 
+    </div>
+    <div class='chunk'>
+      <p style='height:15mm'>This is a secont content block that will always stay in one peace 
       and will never be splitted across multiple pages.</p>
-		</div>
-		<div class='chunk'>
-    	<p style='height:15mm'>This is a third content block that will always stay in one peace 
+    </div>
+    <div class='chunk'>
+      <p style='height:15mm'>This is a third content block that will always stay in one peace 
       and will never be splitted across multiple pages.</p>
-		</div>  
+    </div>  
   </div>
 
-	<script type='text/html' id='header'>
-		<p>This is a header of a page. Page number: <%= page_number %></p>		
-	</script>
+  <script type='text/html' id='header'>
+    <p>This is a header of a page. Page number: <%= page_number %></p>		
+  </script>
 
   <script type='text/html' id='footer'>
-		<p>This is a footer of a page. Page number: <%= page_number %></p>		
-	</script>
+    <p>This is a footer of a page. Page number: <%= page_number %></p>		
+  </script>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script type="text/javascript" src="http://documentcloud.github.com/underscore/underscore-min.js"></script>
@@ -67,20 +67,20 @@ You have to include `jquery`, `underscore` and `reportmesh` JavaScript libraries
 
   <div class='page' style='width:200mm; height:287mm; padding: 5mm 5mm 5mm 5mm'>
     <div class='chunk'>
-    	<p>This is a content that will always stay in one peace 
+      <p>This is a content that will always stay in one peace 
       and will never be splitted across multiple pages.</p>
-		</div>
-		<div class='chunk'>
-			<p style='height:15mm'>This is a secont content block that will always stay in one peace 
+    </div>
+    <div class='chunk'>
+      <p style='height:15mm'>This is a secont content block that will always stay in one peace 
       and will never be splitted across multiple pages.</p>
-		</div>
+    </div>
   </div>
 
   <div class='page' style='width:200mm; height:287mm; padding: 5mm 5mm 5mm 5mm'>
-		<div class='chunk'>
-    	<p style='height:15mm'>This is a third content block that will always stay in one peace 
+	  <div class='chunk'>
+      <p style='height:15mm'>This is a third content block that will always stay in one peace 
       and will never be splitted across multiple pages.</p>
-		</div>  
+	  </div>  
   </div>	
 
 </body>

@@ -95,8 +95,9 @@ function renderReportMesh(params){
 
     //Finding and adding chunks
 
-    var $content = $('#content');
+    var $content = $('#reportmesh');
     $content.remove();
+    $body.empty();
     create_page();
     $page_content.html('<h1>No content supplied</h1>');
     $content.find('.chunk').each(function(index){
